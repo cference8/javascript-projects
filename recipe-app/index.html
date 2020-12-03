@@ -18,39 +18,38 @@
   <body>
     <div class="mobile-container">
       <header>
-        <input type="text" />
+        <input type="text" id="search-term" />
         <button id="search"><i class="fas fa-search"></i></button>
       </header>
       <div class="fav-container">
         <h3>Favorite Meals</h3>
-        <ul class="fav-meals">
-          <li>
-            <img
-              src="https://www.themealdb.com/images/ingredients/Lime.png"
-              alt=""
-            /><span>Lime</span>
-          </li>
-          <li>
-            <img
-              src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview"
-              alt=""
-            /><span>Carbonara</span>
-          </li>
-          <li>
-            <img
-              src="https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg"
-              alt=""
-            /><span>Lasagna Sandwiches</span>
-          </li>
-          <li>
-            <img
-              src="https://www.themealdb.com/images/media/meals/uttupv1511815050.jpg"
-              alt=""
-            /><span>Pork Sandwiches</span>
-          </li>
+        <ul class="fav-meals" id="fav-meals"></ul>
+      </div>
+      <div class="meals" id="meals"></div>
+    </div>
+    <div class="popup-container hidden" id="meal-popup">
+      <div class="popup" id="popup">
+        <button id="close-popup" class="close-popup">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <h1>Meal title</h1>
+        <img
+          src="https://www.themealdb.com/images/ingredients/Lime.png
+            "
+          alt=""
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+          dignissimos earum consectetur aut dolorum? Commodi quo molestias
+          voluptatum consequuntur recusandae?
+        </p>
+        <ul>
+          <li>ing 1 / measure</li>
+          <li>ing 1 / measure</li>
+          <li>ing 1 / measure</li>
         </ul>
       </div>
-      <div class="meals" id="meals">
     </div>
   </body>
 </html>
